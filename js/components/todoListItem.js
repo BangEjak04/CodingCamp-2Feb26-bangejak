@@ -43,11 +43,12 @@ export default function TodoListItem({ todo }) {
     dateInfo.className = `mt-2 flex items-center gap-2 text-xs font-medium ${
         isOverdue && !todo.isCompleted ? "text-red-500" : "text-slate-400"
     }`;
+    const formattedDate = formatDueDate(todo.dueDate);
 
     // Tambahkan icon kalender kecil (opsional)
     dateInfo.innerHTML = `
         <img src="js/assets/calendar.svg" class="size-4 opacity-70 dark:invert" />
-        <span>${formatDueDate(todo.dueDate)}</span>
+        <span>${formattedDate}</span>
     `;
 
     return Card({
