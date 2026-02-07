@@ -5,7 +5,7 @@ import TodoListTitle from "./todoListTitle.js";
 import Card from "./ui/card.js";
 import CardContent from "./ui/cardContent.js";
 import Button from "./ui/button.js";
-import { formatDueDate } from "../utils/formatdueDate.js";
+import formatDueDate from "../utils/formatdueDate.js";
 
 export default function TodoListItem({ todo }) {
     const checkbox = document.createElement('input');

@@ -1,4 +1,4 @@
-export function formatDueDate(dateString) {
+export default function formatDueDate(dateString) {
     if (!dateString) return "No deadline";
 
     const targetDate = new Date(dateString);
