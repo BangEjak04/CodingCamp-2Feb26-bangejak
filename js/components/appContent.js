@@ -4,7 +4,7 @@
  */
 export default function AppContent({ children = [] }) {
     const component = document.createElement('main');
-    component.className = "max-w-lg mx-auto p-4";
+    component.className = "max-w-lg mx-auto p-4 flex flex-col gap-y-8";
 
     children.forEach(child => {
         if (child) component.appendChild(child);

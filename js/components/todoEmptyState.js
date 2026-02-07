@@ -5,7 +5,7 @@ export default function TodoEmptyState() {
     const img = document.createElement('img');
     img.src = "./js/assets/empty.svg";
     img.alt = "Empty";
-    img.className = "size-12 opacity-50";
+    img.className = "size-12 opacity-50 dark:invert";
 
     const headMessage = document.createElement('h3');
     headMessage.className = "text-lg font-semibold mb-1";

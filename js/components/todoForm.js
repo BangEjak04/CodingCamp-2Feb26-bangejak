@@ -72,7 +72,7 @@ export default function TodoForm() {
                             children: [
                                 Button({
                                     type: 'submit',
-                                    content: 'Tambah Todo'
+                                    content: 'Add'
                                 })
                             ]
                         })

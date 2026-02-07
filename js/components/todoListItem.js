@@ -17,12 +17,16 @@ export default function TodoListItem({ todo }) {
     };
 
     const deleteBtn = Button({
-        content: "Hapus",
-        type: "button"
+        content: `<img 
+            src="js/assets/trash.svg" 
+            alt="Delete" 
+            class="w-4 h-4 opacity-70 group-hover/button:opacity-100 dark:invert"
+        />`,
+        type: "button",
     });
-    deleteBtn.className = "text-xs text-red-500 hover:text-red-700 font-medium ml-auto";
+    deleteBtn.className = "text-xs text-red-500 hover:bg-red-700 font-medium ml-auto p-1 rounded-sm transition";
     deleteBtn.onclick = () => {
-        if (confirm('Hapus tugas ini?')) {
+        if (confirm('Delete this task?')) {
             todoActions.delete(todo.id);
             renderTodoList();
         }

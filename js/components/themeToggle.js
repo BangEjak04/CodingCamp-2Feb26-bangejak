@@ -2,7 +2,7 @@ import { toggleThemeMode, getThemeMode } from "../utils/theme.js";
 
 export default function ThemeToggle() {
     const button = document.createElement('button');
-    button.className = "fixed top-4 right-4 p-2 rounded-md border border-slate-200 bg-white dark:bg-slate-950 dark:border-slate-800 transition-all hover:bg-slate-100 dark:hover:bg-slate-900";
+    button.className = "p-2 rounded-md border border-slate-200 bg-white dark:bg-slate-950 dark:border-slate-800 transition-all hover:bg-slate-100 dark:hover:bg-slate-900";
     
     const updateIcon = () => {
         const theme = localStorage.getItem('themeMode') || 'light';
